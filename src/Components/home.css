@@ -1,0 +1,21 @@
+.head{
+    display: flex;
+    justify-content: center;
+}
+.generateButton{
+    margin: 5px auto;
+    display: inline;
+    padding: 10px;
+    outline: none;
+    border-radius: 1px solid rgb(147, 147, 233);
+    background-color: rgb(147, 147, 233);
+}
+.passwordGeneratedArea{
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    text-emphasis: 500;
+    min-height: 50px;
+    border: 2px solid black;
+    padding: 5px;
+}

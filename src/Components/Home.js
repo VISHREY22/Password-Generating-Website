@@ -21,26 +21,26 @@ function Home() {
         let PasswordGenerated = '';
 
         if (includeUpper) {
-            characters += PasswordContent.upper;
+            characters = characters + PasswordContent.upper;
         }
         if (includeLower) {
-            characters += PasswordContent.lower;
+            characters = characters + PasswordContent.lower;
         }
         if (includeDigits) {
-            characters += PasswordContent.number;
+            characters = characters + PasswordContent.number;
         }
         if (includeSpecial) {
-            characters += PasswordContent.special;
+            characters = characters + PasswordContent.special;
         }
 
         if (characters === '') {
-            setPassword(''); // Reset password if no character set is selected
+            setPassword(''); 
             return;
         }
 
         for (let i = 0; i < length; i++) {
             const randomIndex = Math.floor(Math.random() * characters.length);
-            PasswordGenerated += characters[randomIndex];
+            PasswordGenerated = PasswordGenerated + characters[randomIndex];
         }
         setPassword(PasswordGenerated);
     }
